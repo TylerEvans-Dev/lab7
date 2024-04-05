@@ -160,7 +160,7 @@ void PI_update(void) {
     
     /// TODO: calculate error signal and write to "error" variable DONE
     //ask aston.
-    error = target_rpm - ((motor_speed) * 2);
+    error = (target_rpm *2)- ((motor_speed));
     
     /* Hint: Remember that your calculated motor speed may not be directly in RPM!
      *       You will need to convert the target or encoder speeds to the same units.
